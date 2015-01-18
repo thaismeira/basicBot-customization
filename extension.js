@@ -54,8 +54,8 @@
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "basicBot",
-        language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        language: "português",
+        chatLink: "https://rawgit.com/diegodepira/basicBot/master/lang/pt.json",
         maximumAfk: 120,
         afkRemoval: true,
         maximumDc: 60,
@@ -72,19 +72,19 @@
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["tema", "A música não se encaixa nos padrões da sala. "],
+            ["op", "Essa música está na lista OP. "],
+            ["historico", "A música ainda está no histórico. "],
+            ["mix", "Você tocou um mix (muito longo) - não permitido. "],
+            ["som", "A música que você tocou tinha má qualidade ou estava sem som. "],
+            ["nsfw", "A música que você tocou é NSFW (impróprio). "],
+            ["indisponivel", "A música que você tocou está indisponível. "]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Mensagem Temporária do Dia",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
@@ -99,12 +99,12 @@
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/diegodepira/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/diegodepira/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/diegodepira/basicBot/master/basicBot.js', extend);
 
 }).call(this);
